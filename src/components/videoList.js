@@ -13,6 +13,20 @@ angular.module('video-player')
     bindToController: true, 
     controller: function() {
     //   console.log(videos[0]);
-    }
+      // this.videos.map = (video) => {
+
+      // }
+    },
+    // template: `
+    //   <ul>
+    //     <li>
+
+    //     //$index, as long as $index < videoList.length 
+    //     //ng-repeat video in ctrl.videos (for in version for angular)
+    //     // {{video}}
+
+    //     </li>
+    //   </ul>
+    // `
   };
 });
