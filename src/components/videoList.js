@@ -3,8 +3,8 @@ angular.module('video-player')
   return {
     // TODO
     scope: {
-    videos: '<',//class="todos"
-    onClick: '<'
+      videos: '<',//class="todos"
+      onClick: '<'
     },
 
     templateUrl: "src/templates/videoList.html",

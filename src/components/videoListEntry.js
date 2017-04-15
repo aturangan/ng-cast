@@ -3,11 +3,12 @@ angular.module('video-player')
   return {
     // TODO
     scope: {
-    	video: '<'
+    	video: '<',
     },
-    templateUrl: "src/templates/videoListEntry.html"
+    restrict: 'E',
+    templateUrl: "src/templates/videoListEntry.html",
     controllerAs: 'ctrl',
-    bindController: true,
+    bindToController: true,
     controller: function() {}
   };
 
