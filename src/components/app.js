@@ -1,12 +1,16 @@
-angular.module('video-player', [])
-	
-// .controller('ctrl', function($scope) {
-// $scope.link = "/src/data/exampleVideoData.js"
-// })
+angular.module('video-player')
 
 .directive('app', function() {
   return {
-    // TODO
+    scope: {},
+    controllerAs: 'ctrl',
+    bindController: true,
+    controller: function($window) {
+      this.selectVideo = function() {};
+      this.searchResults = function() {}
+      this.currentVideo = exampleVideoData[0];
+      this.videos = $window.exampleVideoData;
+    },
     templateUrl: "src/templates/app.html"
   };
 });
