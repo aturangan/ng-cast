@@ -1,9 +1,9 @@
 angular.module('video-player')
 .directive('videoList', function() {
   return {
-    // TODO
+    // // TODO
     scope: {
-      videos: '<',//class="todos"
+      videos: '<',//all the videos
       onClick: '<'
     },
 
@@ -11,8 +11,7 @@ angular.module('video-player')
     restrict: 'E', 
     controllerAs: 'ctrl', 
     bindToController: true, 
-    controller: function() {
-      this.onClick = function () {}
-    },
-  };
-});
+    controller: function() {}
+    }
+  });
+
